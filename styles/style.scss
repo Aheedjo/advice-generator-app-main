@@ -16,11 +16,6 @@ body {
     text-align: center;
     font-family: $Font_family;
     background-color: $Dark_Blue;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
-    // height: 100vh;
     font-size: $Font_size_quote;
 }
 
@@ -46,7 +41,7 @@ body {
         margin-top: 20px;
     }
     .play {
-        margin-top: 30px;
+        margin-top: 40px;
         width: fit-content;
         margin: auto;
         #img2 {
@@ -118,5 +113,11 @@ body {
                 border-radius: 50%;
             }
         }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        padding: 38px 20px 70px 20px;
     }
 }
