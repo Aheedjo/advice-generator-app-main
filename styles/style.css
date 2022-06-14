@@ -1,0 +1,121 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  background-color: #1f2632;
+  font-size: 28px;
+}
+
+.card {
+  width: 90%;
+  max-width: 540px;
+  padding: 47px 47px 70px 47px;
+  margin: 150px auto;
+  background-color: #323a49;
+  border-radius: 15px;
+  position: relative;
+}
+
+.card #advice_id {
+  color: #52ffa8;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.5em;
+}
+
+.card #advice {
+  font-size: 28px;
+  color: #cee3e9;
+  font-weight: 600;
+  line-height: 1.43em;
+  margin-top: 20px;
+}
+
+.card .play {
+  margin-top: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.card .play #img2 {
+  display: none;
+}
+
+.card .random {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.card .random button {
+  background-color: #52ffa8;
+  border: transparent;
+  padding: 20px;
+  padding-bottom: 17px;
+  border-radius: 50%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.card .random button:hover {
+  box-shadow: 0px 0px 30px 0px #52ffa8;
+  -webkit-box-shadow: 0px 0px 30px 0px #52ffa8;
+  -moz-box-shadow: 0px 0px 30px 0px #52ffa8;
+}
+
+@media screen and (max-width: 600px) {
+  .card .play {
+    margin-top: 30px;
+  }
+  .card .play #img1 {
+    display: none;
+  }
+  .card .play #img2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    padding: 38px 25px 70px 25px;
+    margin: 100px auto;
+  }
+  .card #advice_id {
+    font-size: 0.42em;
+  }
+  .card #advice {
+    font-size: 0.85em;
+    line-height: 1.3em;
+    margin-top: 25px;
+  }
+  .card .play {
+    margin-top: 25px;
+  }
+  .card .random {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .card .random button {
+    background-color: #52ffa8;
+    border: transparent;
+    padding: 20px;
+    padding-bottom: 17px;
+    border-radius: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

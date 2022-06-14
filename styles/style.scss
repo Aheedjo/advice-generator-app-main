@@ -1,0 +1,122 @@
+$Light_Cyan: hsl(193, 38%, 86%);
+$Neon_Green: hsl(150, 100%, 66%);
+$Grayish_Blue: hsl(217, 19%, 38%);
+$Dark_Grayish_Blue: hsl(217, 19%, 24%);
+$Dark_Blue: hsl(218, 23%, 16%);
+$Font_size_quote: 28px;
+$Font_family: 'Manrope',
+sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: $Font_family;
+    background-color: $Dark_Blue;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    // height: 100vh;
+    font-size: $Font_size_quote;
+}
+
+.card {
+    width: 90%;
+    max-width: 540px;
+    padding: 47px 47px 70px 47px;
+    margin: 150px auto;
+    background-color: $Dark_Grayish_Blue;
+    border-radius: 15px;
+    position: relative;
+    #advice_id {
+        color: $Neon_Green;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.5em;
+    }
+    #advice {
+        font-size: $Font_size_quote;
+        color: $Light_Cyan;
+        font-weight: 600;
+        line-height: 1.43em;
+        margin-top: 20px;
+    }
+    .play {
+        margin-top: 30px;
+        width: fit-content;
+        margin: auto;
+        #img2 {
+            display: none;
+        }
+    }
+    .random {
+        position: absolute;
+        bottom: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        button {
+            background-color: $Neon_Green;
+            border: transparent;
+            padding: 20px;
+            padding-bottom: 17px;
+            border-radius: 50%;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+        }
+        button:hover {
+            box-shadow: 0px 0px 30px 0px $Neon_Green;
+            -webkit-box-shadow: 0px 0px 30px 0px $Neon_Green;
+            -moz-box-shadow: 0px 0px 30px 0px $Neon_Green;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        .play {
+            margin-top: 30px;
+            #img1 {
+                display: none;
+            }
+            #img2 {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        padding: 38px 25px 70px 25px;
+        margin: 100px auto;
+        #advice_id {
+            font-size: 0.42em;
+        }
+        #advice {
+            font-size: 0.85em;
+            line-height: 1.3em;
+            margin-top: 25px;
+        }
+        .play {
+            margin-top: 25px;
+        }
+        .random {
+            position: absolute;
+            bottom: -32px;
+            left: 50%;
+            transform: translateX(-50%);
+            button {
+                background-color: $Neon_Green;
+                border: transparent;
+                padding: 20px;
+                padding-bottom: 17px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
